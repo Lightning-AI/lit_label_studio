@@ -12,19 +12,19 @@ First, install lit_label_studio (warning: this app has not been officially appro
 
 - Option git clone
 ```bash
-git clone  https://github.com/robert-s-lee/lit_label_studio
+git clone  https://github.com/Lightning-AI/lit_label_studio
 cd lit_label_studio
 python -m pip install -e .
 ```
 
 - Option pip install
 ```bash
-python -m pip install  https://github.com/robert-s-lee/lit_label_studio/archive/refs/tags/0.0.0.tar.gz
+python -m pip install  https://github.com/Lightning-AI/lit_label_studio/archive/refs/tags/0.0.0.tar.gz
 ```
 
 - Option lightning install
 ```bash
-python -m lightning install component git+https://github.com/robert-s-lee/lit_label_studio.git@0.0.0
+python -m lightning install component git+https://github.com/Lightning-AI/lit_label_studio.git@0.0.0
 ```
 
 - verify 
