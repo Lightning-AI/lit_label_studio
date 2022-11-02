@@ -1,12 +1,11 @@
-import lightning_app as la
-from lightning.app.storage.drive import Drive
-from lit_bashwork import LitBashWork
-
+import os
 from pathlib import Path
 from string import Template
+from typing import List, Optional, Union
 
-import os
-from typing import Optional, Union, List
+import lightning.app as la
+from lightning.app.storage.drive import Drive
+from lit_bashwork import LitBashWork
 
 # dir where label studio python venv will be setup
 label_studio_venv        = "venv-label-studio"
