@@ -8,11 +8,11 @@ setup(
     description="label studio",
     author="Robert S Lee",
     author_email="sangkyulee@gmail.com",
-    url="https://github.com/robert-s-lee/lit_label_studio",
+    url="https://github.com/Lightning-AI/lit_label_studio",
     install_requires=[
         "lightning",
         "virtualenv",
-        "lit_bashwork @ https://github.com/robert-s-lee/lit_bashwork/archive/refs/tags/0.0.1.tar.gz",
+        "lit_bashwork @ https://github.com/Lightning-AI/lit_bashwork/archive/refs/tags/0.0.3.tar.gz",
     ],
     packages=find_packages(),
     include_package_data=True,
