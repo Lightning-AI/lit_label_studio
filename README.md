@@ -75,7 +75,7 @@ Once the app is installed, use it in an app:
 ```python
 from lit_label_studio import LitLabelStudio
 
-import lightning_app as la
+import lightning.app as la
 
 class LitApp(la.LightningFlow):
     def __init__(self) -> None:
