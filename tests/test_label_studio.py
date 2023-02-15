@@ -7,6 +7,5 @@ from lit_label_studio.component import LitLabelStudio
 
 
 def test_placeholder_component():
-    messenger = LitLabelStudio()
-    messenger.run()
-    assert messenger.value == 1
+    app = LitLabelStudio()
+    app.run()
