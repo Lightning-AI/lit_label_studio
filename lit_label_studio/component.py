@@ -41,7 +41,9 @@ class LitLabelStudio(la.LightningFlow):
     def start_label_studio(self):
         # create config file
         self.label_studio.run(
-            f"sed -e s/__port__/{self.label_studio.port}/g -e s/__host__/{self.label_studio.host}/ nginx-8080.conf > ~/{new_conf_file}",
+            f"sed -e s/__port__/{self.label_studio.port}/g"
+            f" -e s/__host__/{self.label_studio.host}/ nginx-8080.conf"
+            f" > ~/{new_conf_file}",
             wait_for_exit=True,
         )
 
