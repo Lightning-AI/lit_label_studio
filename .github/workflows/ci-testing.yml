@@ -8,9 +8,13 @@ on:
   pull_request:
     branches: [main]
 
-jobs:
-  pytest:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}-${{ github.head_ref }}
+  cancel-in-progress: ${{ ! (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/release/')) }}
 
+jobs:
+
+  pytest:
     runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
