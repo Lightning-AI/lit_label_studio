@@ -1,6 +1,6 @@
-from lit_label_studio import LitLabelStudio
-
 import lightning_app as la
+
+from lit_label_studio import LitLabelStudio
 
 
 class LitApp(la.LightningFlow):
@@ -12,6 +12,7 @@ class LitApp(la.LightningFlow):
         self.lit_label_studio.run()
 
     def configure_layout(self):
-        return({"name": "Annotate", "content": self.lit_label_studio.label_studio})
+        return {"name": "Annotate", "content": self.lit_label_studio.label_studio}
+
 
 app = la.LightningApp(LitApp())

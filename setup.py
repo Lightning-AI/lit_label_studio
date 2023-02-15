@@ -16,5 +16,5 @@ setup(
     ],
     packages=find_packages(),
     include_package_data=True,
-    package_data={'': ['nginx-8080.conf']},    
+    package_data={"": ["nginx-8080.conf"]},
 )
